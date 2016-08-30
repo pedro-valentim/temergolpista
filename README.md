@@ -1,6 +1,6 @@
 Michel Temer -> Temer Golpista
 =============
-
+Project totally based on [https://github.com/drewrwilson/SomeRichAsshole]https://github.com/drewrwilson/SomeRichAsshole
 Plugin para navegadores que substitui "Michel Temer" por "Temer Golpista"
 
 Disponível para Chrome e Firefox.
