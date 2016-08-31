@@ -41,7 +41,7 @@ function handleText(textNode)
 	v = v.replace(/\bvice-presidente Michel Temer\b/g, "Vice-decorativo e golpista");
 	v = v.replace(/\bvice-presidente Michel Temer\b/g, "Vice-decorativo e golpista");
 	v = v.replace(/\bpresidente interino da República Federativa do Brasil\b/g, "presidente golpista sem voto da República Federativa do Brasil");
-
+	v = v.replace(/\bTemer\b/g, "Temer Golpista");
 
 	textNode.nodeValue = v;
 }
