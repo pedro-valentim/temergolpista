@@ -112,8 +112,9 @@ function handleText(textNode)
 	var i = senadores.length;
 
 	while (i--) {
-		v = v.replace(new RegExp('\\b' + senadores[i] + '\\b', 'gi'), senadores[i] + ' (GOLPISTA)');
-	}
+        if (v.indexOf("GOLPISTA") == -1)
+            v = v.replace(new RegExp('\\b' + senadores[i] + '\\b', 'gi'), senadores[i] + ' (GOLPISTA)');
+    }
 
 	/*Images !!!! 1 k de shares*/
 	/*v = v.replace(/\bhttp://css.og.infg.com.br/1470152878/img/logo.png\b, "http://temergolpista.greve.xyz/img/o_globo.png");*/
