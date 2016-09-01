@@ -1,18 +1,21 @@
-Donald Trump -> Some Rich Asshole
+Temer Golpista
 =============
 
-Browser add-on that replaces "Donald Trump" with "Some Rich Asshole".
+ Deixe seu navegador dizer a verdade com esse plugin que troca 'MicheI Temer' por 'Temer Golpista'.
 
-Available for Chrome and Firefox.
+Project totally based on the project [SomeRichAsshole](https://github.com/drewrwilson/SomeRichAsshole) by [Drew Wilson](https://github.com/drewrwilson)
 
-![Screenshot](/screenshots/good-morning-trump.jpg)
+Disponível para Chrome e Firefox.
+
+![Screenshot2](/screenshots/screenshot-temer-golpista5.png)
+![Screenshot1](/screenshots/screenshot-temer-golpista1.png)
+![Screenshot2](/screenshots/screenshot-temer-golpista2.png)
+![Screenshot2](/screenshots/screenshot-temer-golpista3.png)
+![Screenshot2](/screenshots/screenshot-temer-golpista4.png)
+
 
 ## How to install
 
 ### Chrome
 
-The best way to install this is from [the chrome webstore](https://chrome.google.com/webstore/detail/some-rich-asshole/hgcjjgnlnheojgpdiafpdnjjpbkedgfh). Please take a moment to rate the extension too.
-
-### Firefox
-
-Install it from [Mozilla's add-on site](https://addons.mozilla.org/en-US/firefox/addon/some-rich-asshole/)
+Para instalar basta acessar [a chrome webstore](https://chrome.google.com/webstore/detail/temer-golpista/dompoccllcaliphengbfbjihlnjnohae?hl=pt-BR).

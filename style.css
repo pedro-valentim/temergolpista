@@ -40,7 +40,7 @@ a {
   text-align: center;
   z-index: 300;
   width: 100%;
-  height: 309px;
+  height: 349px;
 }
 @media screen and (min-width: 360px) {
   .antagonist .antagonist_message {
@@ -94,7 +94,7 @@ a {
   padding-top: 10px;
   border-top: 4px solid #fff;
   border-bottom: 4px solid #fff;
-  background: #2b325f;
+  background: #484848;
   text-align: center;
   display: inline-block;
   z-index: 9999;

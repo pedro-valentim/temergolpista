@@ -2,7 +2,7 @@
     function walk(node)
     {
         var child, next;
-        
+
         switch ( node.nodeType )
         {
             case 1:  // Element
@@ -16,71 +16,43 @@
                     child = next;
                 }
                 break;
-            
+
             case 3: // Text node
                 handleText(node);
                 break;
         }
     }
-    
+
     function handleText(textNode)
     {
         var v = textNode.nodeValue;
-        
-        v = v.replace(/\bDONALD JOHN TRUMP\b/g, "SOME RICH ASSHOLE");
-        v = v.replace(/\bDonald John Trump\b/g, "Some Rich Asshole");
-        v = v.replace(/^Donald John Trump$/g, "Some Rich Asshole");
-        v = v.replace(/\bdonald john trump\b/g, "some rich asshole");
-        v = v.replace(/\bDONALD J. TRUMP\b/g, "SOME RICH ASSHOLE");
-        v = v.replace(/\bDonald J. Trump\b/g, "Some Rich Asshole");
-        v = v.replace(/\bdonald j. trump\b/g, "some rich asshole");
-        v = v.replace(/\bDONALD J TRUMP\b/g, "SOME RICH ASSHOLE");
-        v = v.replace(/\bDonald J Trump\b/g, "Some Rich Asshole");
-        v = v.replace(/\bdonald j trump\b/g, "some rich asshole");
-        v = v.replace(/\bMR. TRUMP\b/g, "MR. RICH ASSHOLE");
-        v = v.replace(/\bMr. Trump\b/g, "Mr. Rich Asshole");
-        v = v.replace(/\bmr. trump\b/g, "mr. rich asshole");
-        v = v.replace(/\bPRESIDENTIAL CANDIDATE TRUMP\b/g, "SOME RICH ASSHOLE WHO WANTS TO BE PRESIDENT");
-        v = v.replace(/\bPresidential Candidate Trump\b/g, "Some rich asshole who wants to be president");
-        v = v.replace(/\bpresidential candidate trump\b/g, "some rich asshole who wants to be president");
-        v = v.replace(/\bPRESIDENTIAL CANDIDATE DONALD TRUMP\b/g, "SOME RICH ASSHOLE WHO WANTS TO BE PRESIDENT");
-        v = v.replace(/\bPresidential candidate Donald Trump\b/g, "Some rich asshole who wants to be president");
-        v = v.replace(/\bpresidential candidate Donald Trump\b/gi, "some rich asshole who wants to be president");
-        v = v.replace(/\bDONALD TRUMP\b/g, "SOME RICH ASSHOLE");
-        v = v.replace(/\bDonald Trump\b/g, "Some Rich Asshole");
-        v = v.replace(/^Donald Trump\b/g, "Some Rich Asshole");
-        v = v.replace(/\.( )*\bDonald Trump\b/g, ". Some Rich Asshole");
-        v = v.replace(/\bdonald trump\b/g, "some rich asshole");
-        v = v.replace(/\b#DONALDTRUMP\b/g, "#SOMERICHASSHOLE");
-        v = v.replace(/\b#DonaldTrump\b/gi, "#SomeRichAsshole");
-        v = v.replace(/\b#TRUMP\b/g, "#SOMERICHASSHOLE");
-        v = v.replace(/\b#Trump\b/gi, "#SomeRichAsshole");
-        v = v.replace(/\b#TRUMP2016\b/g, "#SOMERICHASSHOLE2016");
-        v = v.replace(/\b#Trump2016\b/gi, "#SomeRichAsshole2016");
-        v = v.replace(/\b#TEAMTRUMP\b/g, "#TEAMRICHASSHOLE");
-        v = v.replace(/\b#TeamTrump\b/gi, "#TeamRichAsshole");
-        v = v.replace(/\bTRUMP2016\b/g, "RICHASSHOLE2016");
-        v = v.replace(/\bTrump2016\b/gi, "RichAsshole2016");
-        v = v.replace(/\bdonaldjtrump.com\b/gi, "SomeRichAsshole.com");
-        v = v.replace(/\bTHE DONALD\b/g, "THE RICH ASSHOLE");
-        v = v.replace(/\bThe Donald\b/g, "The Rich Asshole");
-        v = v.replace(/\bthe donald\b/g, "the rich asshole");
-        v = v.replace(/\bTRUMP\b/g, "RICH ASSHOLE");
-        v = v.replace(/\bTrump\b/g, "The Rich Asshole");
-        v = v.replace(/^Trump\b/g, "The Rich Asshole");
-        v = v.replace(/\.( )*\bTrump\b/g, ". The Rich Asshole");
-        
+
+        v = v.replace(/\bMICHEL TEMER\b/g, "TEMER GOLPISTA GOLPISTA");
+      	v = v.replace(/\bMichel Temer\b/g, "Temer Golpista");
+      	v = v.replace(/\bPresidente Interino\b/g, "Presidente Sem Voto");
+      	v = v.replace(/\bpresidente interino Michel Temer\b/g, "presidente sem voto");
+      	v = v.replace(/\bMichel Miguel Elias Temer Lulia\b/g, "Temer Golpista");
+      	v = v.replace(/^Michel Miguel Elias Temer Lulia$/g, "Presidente Golpista");
+      	v = v.replace(/\bmichel miguel elias temer lulia\b/g, "presidente golpista");
+      	v = v.replace(/\bPRESIDENTE MICHEL TEMER\b/g, "PRESIDENTE GOLPISTA SEM VOTO");
+      	v = v.replace(/\bPresidente Michel Temer\b/g, "Presidente Golpista Sem Voto");
+      	v = v.replace(/\bpresidente michel temer\b/g, "presidente golpista sem voto");
+      	v = v.replace(/\bVice-presidente Michel Temer\b/g, "Vice-decorativo e golpista");
+      	v = v.replace(/\bVice-Presidente Michel Temer\b/g, "Vice-decorativo e golpista");
+      	v = v.replace(/\bvice-presidente Michel Temer\b/g, "Vice-decorativo e golpista");
+      	v = v.replace(/\bvice-presidente Michel Temer\b/g, "Vice-decorativo e golpista");
+
         textNode.nodeValue = v;
     }
-    
+
     function windowLoadHandler()
     {
         // Dear Mozilla: I hate you for making me do this.
         window.removeEventListener('load', windowLoadHandler);
-        
+
         document.getElementById('appcontent').addEventListener('DOMContentLoaded', function(e) {
             walk(e.originalTarget.body);
-            
+
             new MutationObserver(function() {
               walk(e.originalTarget.body);
             }).observe(e.originalTarget.body, {
@@ -88,6 +60,6 @@
             });
         });
     }
-    
+
     window.addEventListener('load', windowLoadHandler);
 }());
