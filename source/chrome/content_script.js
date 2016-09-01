@@ -43,6 +43,11 @@ function handleText(textNode)
 	v = v.replace(/\bvice-presidente Michel Temer\b/g, "Vice-decorativo e golpista");
 	v = v.replace(/\bpresidente interino da República Federativa do Brasil\b/g, "presidente golpista sem voto da República Federativa do Brasil");
 
+
+	/*Images !!!! 1 k de shares*/
+	/*v = v.replace(/\bcss.og.infg.com.br/1470152878/img/logo.png\b/g, "img/o_globo.png");*/
+
+
 	textNode.nodeValue = v;
 }
 
